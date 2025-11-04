@@ -1,0 +1,33 @@
+version: '3.7'
+services:
+  sentinel1:
+    image: 'redis:5.0.9'
+    container_name: redis-sentinel-1
+    restart: always
+    command: redis-sentinel /etc/redis/sentinel.conf
+    volumes:
+      - ./sentinel1.conf:/etc/redis/sentinel.conf
+    ports:
+      - 26379:26379
+  sentinel2:
+    image: 'redis:5.0.9'
+    container_name: redis-sentinel-2
+    restart: always
+    command: redis-sentinel /etc/redis/sentinel.conf
+    volumes:
+      - ./sentinel2.conf:/etc/redis/sentinel.conf
+    ports:
+      - 26380:26379
+  sentinel3:
+    image: 'redis:5.0.9'
+    container_name: redis-sentinel-3
+    restart: always
+    command: redis-sentinel /etc/redis/sentinel.conf
+    volumes:
+      - ./sentinel3.conf:/etc/redis/sentinel.conf
+    ports:
+      - 26381:26379
+networks:
+  default:
+    external:
+      name: redis-data_default
