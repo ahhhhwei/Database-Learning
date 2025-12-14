@@ -11,3 +11,4 @@
    7. [哨兵](https://github.com/ahhhhwei/Database-Learning/blob/main/2.redis/7.哨兵.md)
    8. [集群](https://github.com/ahhhhwei/Database-Learning/blob/main/2.redis/8.集群.md)
    9. [Redis 典型应用](https://github.com/ahhhhwei/Database-Learning/blob/main/2.redis/9.Redis%20典型应用.md)
+3. [shardingsphere](https://github.com/ahhhhwei/Database-Learning/tree/main/3.shardingsphere)
