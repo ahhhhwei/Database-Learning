@@ -1,0 +1,75 @@
+Thanks for using Atomikos! This installation is not registered yet. 
+REGISTER FOR FREE at http://www.atomikos.com/Main/RegisterYourDownload and receive:
+- tips & advice 
+- working demos 
+- access to the full documentation 
+- special exclusive bonus offers not available to others 
+- everything you need to get the most out of using Atomikos!
+[INFO ] 2025-11-26 15:05:14.197 [main] o.a.s.p.v.ShardingSphereProxyVersion - Database name is `MySQL`, version is `8.0.38`, database name is `wenjw_db`
+[INFO ] 2025-11-26 15:05:15.071 [main] o.a.s.p.frontend.ShardingSphereProxy - ShardingSphere-Proxy Standalone mode started successfully
+[INFO ] 2025-11-26 15:05:34.357 [ShardingSphere-Command-0] ShardingSphere-SQL - Logic SQL: select @@version_comment limit 1
+[INFO ] 2025-11-26 15:05:34.358 [ShardingSphere-Command-0] ShardingSphere-SQL - Actual SQL: wenjw_db0 ::: select @@version_comment limit 1
+[INFO ] 2025-11-26 15:06:15.081 [ShardingSphere-Command-0] ShardingSphere-SQL - Logic SQL: INSERT INTO wenjw_Stu (Sno, Sname, Sdept, Stel, Sex, Sage, Saddr, Spost) VALUES 
+(2101, '温家伟', '理学院', '19858180826', '男', 19, '山西省', '037000'),
+(2102, '金娇薄', '计院', '19157934071', '女', 20, '浙江省', '315000'),
+(2103, '毛假发', '法学院', '15678901234', '女', 21, '美国', '510000'),
+(2104, '曾辽远', '理学院', '13609876543', '男', 20, '山东市', '518000'),
+(2005, '秋晓荷', '理学院', '13789012345', '女', 21, '浙江省', '610000'),
+(2006, '朱甜甜', '计院', '15908765432', '女', 20, '吉林省', '311100')
+[INFO ] 2025-11-26 15:06:15.083 [ShardingSphere-Command-0] ShardingSphere-SQL - Actual SQL: wenjw_db1 ::: INSERT INTO wenjw_Stu1 (Sno, Sname, Sdept, Stel, Sex, Sage, Saddr, Spost) VALUES 
+(2101, '温家伟', '理学院', '19858180826', '男', 19, '山西省', '037000'), (2103, '毛假发', '法学院', '15678901234', '女', 21, '美国', '510000'), (2005, '秋晓荷', '理学院', '13789012345', '女', 21, '浙江省', '610000')
+[INFO ] 2025-11-26 15:06:15.083 [ShardingSphere-Command-0] ShardingSphere-SQL - Actual SQL: wenjw_db0 ::: INSERT INTO wenjw_Stu0 (Sno, Sname, Sdept, Stel, Sex, Sage, Saddr, Spost) VALUES 
+(2102, '金娇薄', '计院', '19157934071', '女', 20, '浙江省', '315000'), (2104, '曾辽远', '理学院', '13609876543', '男', 20, '山东市', '518000'), (2006, '朱甜甜', '计院', '15908765432', '女', 20, '吉林省', '311100')
+[INFO ] 2025-11-26 15:06:23.391 [ShardingSphere-Command-0] ShardingSphere-SQL - Logic SQL: INSERT INTO wenjw_Cou (Cno, Cname, Cdept, Ctea, Cdate, CScore, Caddr) VALUES 
+(12011, '分布式数据库', '计院', '范玉雷', '大三上', 3, '健行楼'),
+(12012, '人工智能', '计院', '高楠', '大三上', 3, '健行楼'),
+(12013, '数字图像处理', '计院', '刘盛', '大三上', 2, '广知楼'),
+(12014, '数学建模', '理学院', '周凯', '大二下', 3, '健行楼'),
+(12015, '运筹学', '理学院', '丁晓东', '大二下', 4, '广知楼'),
+(12016, '数据结构', '计院', '蒋莉', '大二上', 4, '郁文楼'),
+(12017, '大学物理', '理学院', '施建青', '大一下', 3, '新教楼'),
+(12018, '程序设计基础C', '计院', '蒋莉', '大一上', 4, '子良楼')
+[INFO ] 2025-11-26 15:06:23.393 [ShardingSphere-Command-0] ShardingSphere-SQL - Actual SQL: wenjw_db0 ::: INSERT INTO wenjw_Cou (Cno, Cname, Cdept, Ctea, Cdate, CScore, Caddr) VALUES 
+(12011, '分布式数据库', '计院', '范玉雷', '大三上', 3, '健行楼'), (12012, '人工智能', '计院', '高楠', '大三上', 3, '健行楼'), (12013, '数字图像处理', '计院', '刘盛', '大三上', 2, '广知楼'), (12014, '数学建模', '理学院', '周凯', '大二下', 3, '健行楼'), (12015, '运筹学', '理学院', '丁晓东', '大二下', 4, '广知楼'), (12016, '数据结构', '计院', '蒋莉', '大二上', 4, '郁文楼'), (12017, '大学物理', '理学院', '施建青', '大一下', 3, '新教楼'), (12018, '程序设计基础C', '计院', '蒋莉', '大一上', 4, '子良楼')
+[INFO ] 2025-11-26 15:06:23.394 [ShardingSphere-Command-0] ShardingSphere-SQL - Actual SQL: wenjw_db1 ::: INSERT INTO wenjw_Cou (Cno, Cname, Cdept, Ctea, Cdate, CScore, Caddr) VALUES 
+(12011, '分布式数据库', '计院', '范玉雷', '大三上', 3, '健行楼'), (12012, '人工智能', '计院', '高楠', '大三上', 3, '健行楼'), (12013, '数字图像处理', '计院', '刘盛', '大三上', 2, '广知楼'), (12014, '数学建模', '理学院', '周凯', '大二下', 3, '健行楼'), (12015, '运筹学', '理学院', '丁晓东', '大二下', 4, '广知楼'), (12016, '数据结构', '计院', '蒋莉', '大二上', 4, '郁文楼'), (12017, '大学物理', '理学院', '施建青', '大一下', 3, '新教楼'), (12018, '程序设计基础C', '计院', '蒋莉', '大一上', 4, '子良楼')
+[INFO ] 2025-11-26 15:06:31.995 [ShardingSphere-Command-0] ShardingSphere-SQL - Logic SQL: INSERT INTO wenjw_SC (Sno, Cno, Grade) VALUES 
+(2101, 12011, 100),
+(2101, 12012, 100),
+(2101, 12013, 100),
+(2101, 12014, 100),
+(2101, 12018, 100),
+
+(2102, 12011, 65),
+(2102, 12013, 55),
+(2102, 12015, 59),
+(2102, 12016, 58),
+(2102, 12017, 60),
+
+(2103, 12012, 60),
+(2103, 12013, 15),
+(2103, 12015, 55),
+(2103, 12017, 66),
+(2103, 12018, 55),
+
+(2104, 12014, 79),
+(2104, 12015, 80),
+(2104, 12016, 73),
+(2104, 12017, 66),
+(2104, 12018, 85),
+
+(2005, 12012, 70),
+(2005, 12013, 75),
+(2005, 12014, 81),
+(2005, 12016, 68),
+(2005, 12018, 58),
+
+(2006, 12013, 88),
+(2006, 12014, 96),
+(2006, 12015, 87),
+(2006, 12016, 92),
+(2006, 12018, 100)
+[INFO ] 2025-11-26 15:06:31.996 [ShardingSphere-Command-0] ShardingSphere-SQL - Actual SQL: wenjw_db1 ::: INSERT INTO wenjw_SC1 (Sno, Cno, Grade) VALUES 
+(2101, 12011, 100), (2101, 12012, 100), (2101, 12013, 100), (2101, 12014, 100), (2101, 12018, 100), (2103, 12012, 60), (2103, 12013, 15), (2103, 12015, 55), (2103, 12017, 66), (2103, 12018, 55), (2005, 12012, 70), (2005, 12013, 75), (2005, 12014, 81), (2005, 12016, 68), (2005, 12018, 58)
+[INFO ] 2025-11-26 15:06:31.997 [ShardingSphere-Command-0] ShardingSphere-SQL - Actual SQL: wenjw_db0 ::: INSERT INTO wenjw_SC0 (Sno, Cno, Grade) VALUES 
+(2102, 12011, 65), (2102, 12013, 55), (2102, 12015, 59), (2102, 12016, 58), (2102, 12017, 60), (2104, 12014, 79), (2104, 12015, 80), (2104, 12016, 73), (2104, 12017, 66), (2104, 12018, 85), (2006, 12013, 88), (2006, 12014, 96), (2006, 12015, 87), (2006, 12016, 92), (2006, 12018, 100)
