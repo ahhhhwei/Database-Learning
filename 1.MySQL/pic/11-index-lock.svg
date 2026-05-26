@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 230" width="100%" height="100%">
+  <style>
+    .lock-box { fill: #fce4e4; stroke: #4a4a4a; stroke-width: 1.5; rx: 15px; ry: 15px; }
+    .row-box { fill: #fffdf0; stroke: #4a4a4a; stroke-width: 1.5; rx: 4px; ry: 4px; }
+    .label-text { font-family: "Segoe UI", -apple-system, sans-serif; font-size: 15px; fill: #2d2d2d; text-anchor: middle; dominant-baseline: middle; }
+    /* 核心修复：显式指定中文字体族 */
+    .id-text { font-family: "Microsoft YaHei", "PingFang SC", "SimSun", system-ui, sans-serif; font-size: 16px; font-weight: bold; fill: #2d2d2d; text-anchor: middle; dominant-baseline: middle; }
+    .brace { fill: none; stroke: #4a4a4a; stroke-width: 1.5; stroke-linecap: round; }
+  </style>
+
+  <g transform="translate(0, 0)">
+    <rect x="20" y="20" width="115" height="40" class="lock-box" />
+    <text x="77.5" y="42" class="label-text">Record Locks</text>
+    <path d="M 152,20 Q 147,20 147,28 L 147,35 Q 147,40 141,40 Q 147,40 147,45 L 147,52 Q 147,60 152,60" class="brace" />
+    <rect x="170" y="20" width="390" height="40" class="row-box" />
+    <text x="365" y="42" class="id-text">ID = 10 的行</text>
+  </g>
+
+  <g transform="translate(0, 70)">
+    <rect x="20" y="20" width="115" height="40" class="lock-box" />
+    <text x="77.5" y="42" class="label-text">Record Locks</text>
+    <path d="M 152,20 Q 147,20 147,28 L 147,35 Q 147,40 141,40 Q 147,40 147,45 L 147,52 Q 147,60 152,60" class="brace" />
+    <rect x="170" y="20" width="390" height="40" class="row-box" />
+    <text x="365" y="42" class="id-text">ID = 20 的行</text>
+  </g>
+
+  <g transform="translate(0, 140)">
+    <rect x="20" y="20" width="115" height="40" class="lock-box" />
+    <text x="77.5" y="42" class="label-text">Record Locks</text>
+    <path d="M 152,20 Q 147,20 147,28 L 147,35 Q 147,40 141,40 Q 147,40 147,45 L 147,52 Q 147,60 152,60" class="brace" />
+    <rect x="170" y="20" width="390" height="40" class="row-box" />
+    <text x="365" y="42" class="id-text">ID = 30 的行</text>
+  </g>
+</svg>

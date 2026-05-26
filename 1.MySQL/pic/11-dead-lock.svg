@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" width="100%" height="100%">
+  <defs>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4a4a4a"/>
+    </marker>
+
+    <style>
+      .record-box { fill: #e2e5f8; stroke: #4a4a4a; stroke-width: 1.5; }
+      .transaction-box { fill: #fffdf0; stroke: #4a4a4a; stroke-width: 1.5; rx: 15px; ry: 15px; }
+      
+      .label-text { font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Microsoft YaHei", sans-serif; font-size: 18px; fill: #2d2d2d; text-anchor: middle; dominant-baseline: middle; }
+      
+      /* Specific text color classes */
+      .text-holds { fill: #2ecc71; font-weight: bold; }
+      .text-waits { fill: #e74c3c; font-weight: bold; }
+      
+      /* Solid and dashed lines */
+      .line-solid { stroke: #4a4a4a; stroke-width: 1.5; marker-end: url(#arrowhead); }
+      .line-dashed { stroke: #4a4a4a; stroke-width: 1.5; stroke-dasharray: 6, 4; marker-end: url(#arrowhead); }
+    </style>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff" />
+
+  <g>
+    <rect x="100" y="50" width="180" height="40" class="record-box" />
+    <text x="190" y="70" class="label-text">记录A</text>
+  </g>
+
+  <g>
+    <rect x="440" y="50" width="180" height="40" class="record-box" />
+    <text x="530" y="70" class="label-text">记录B</text>
+  </g>
+
+  <g>
+    <rect x="80" y="280" width="220" height="100" class="transaction-box" />
+    <text x="190" y="330" class="label-text">事务A</text>
+  </g>
+
+  <g>
+    <rect x="420" y="280" width="220" height="100" class="transaction-box" />
+    <text x="530" y="330" class="label-text">事务B</text>
+  </g>
+
+  <g>
+    <path d="M 190,280 L 190,90" class="line-solid" />
+    <text x="190" y="185" class="label-text text-holds">持有锁</text>
+  </g>
+
+  <g>
+    <path d="M 530,280 L 530,90" class="line-solid" />
+    <text x="530" y="185" class="label-text text-holds">持有锁</text>
+  </g>
+
+  <g>
+    <path d="M 190,280 L 530,90" class="line-dashed" />
+    <text x="360" y="155" class="label-text text-waits">等待锁</text>
+  </g>
+
+  <g>
+    <path d="M 530,280 L 190,90" class="line-dashed" />
+    <text x="360" y="215" class="label-text text-waits">等待锁</text>
+  </g>
+</svg>

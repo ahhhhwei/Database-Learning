@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" width="100%" height="100%">
+  <style>
+    .nk-box { fill: #e2e5f8; stroke: #4a4a4a; stroke-width: 1.5; rx: 15px; ry: 15px; }
+    .gap-box { fill: #fce4e4; stroke: #4a4a4a; stroke-width: 1.5; rx: 15px; ry: 15px; }
+    .record-box { fill: #e6f7f4; stroke: #4a4a4a; stroke-width: 1.5; rx: 15px; ry: 15px; }
+    .row-box { fill: #fffdf0; stroke: #4a4a4a; stroke-width: 1.5; rx: 4px; ry: 4px; }
+    
+    .label-text { font-family: "Segoe UI", -apple-system, sans-serif; font-size: 15px; fill: #2d2d2d; text-anchor: middle; dominant-baseline: middle; }
+    .id-text { font-family: "Microsoft YaHei", "PingFang SC", "SimSun", system-ui, sans-serif; font-size: 16px; font-weight: bold; fill: #2d2d2d; text-anchor: middle; dominant-baseline: middle; }
+    .brace { fill: none; stroke: #4a4a4a; stroke-width: 1.5; stroke-linecap: round; }
+  </style>
+
+  <rect width="100%" height="100%" fill="#ffffff" />
+
+  <g>
+    <rect x="20" y="110" width="135" height="40" class="nk-box" />
+    <text x="87.5" y="132" class="label-text">Next-key Locks</text>
+    
+    <path d="M 172,80 Q 167,80 167,88 L 167,125 Q 167,130 161,130 Q 167,130 167,135 L 167,172 Q 167,180 172,180" class="brace" />
+  </g>
+
+  <g>
+    <rect x="185" y="80" width="115" height="40" class="gap-box" />
+    <text x="242.5" y="102" class="label-text">Gap Locks</text>
+    
+    <path d="M 322,60 Q 317,60 317,68 L 317,95 Q 317,100 311,100 Q 317,100 317,105 L 317,132 Q 317,140 322,140" class="brace" />
+  </g>
+
+  <g>
+    <rect x="185" y="140" width="115" height="40" class="record-box" />
+    <text x="242.5" y="162" class="label-text">Record Locks</text>
+    
+    <path d="M 322,140 Q 317,140 317,148 L 317,155 Q 317,160 311,160 Q 317,160 317,165 L 317,172 Q 317,180 322,180" class="brace" />
+  </g>
+
+  <g>
+    <rect x="335" y="20" width="360" height="40" class="row-box" />
+    <text x="515" y="42" class="id-text">ID = 10 的行</text>
+  </g>
+
+  <g>
+    <rect x="335" y="140" width="360" height="40" class="row-box" />
+    <text x="515" y="162" class="id-text">ID = 20 的行</text>
+  </g>
+</svg>
