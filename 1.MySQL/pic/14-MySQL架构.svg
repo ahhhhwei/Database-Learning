@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="916" height="640" viewBox="0 0 916 640" role="img" aria-labelledby="title desc">
+  <title id="title">MySQL Architecture Diagram</title>
+  <desc id="desc">A clean re-created MySQL server architecture diagram matching the provided content.</desc>
+  <defs>
+    <style>
+      .label { font-family: Arial, "Microsoft YaHei", sans-serif; fill: #444; }
+      .small { font-size: 12px; }
+      .xsmall { font-size: 11px; }
+      .tiny { font-size: 10px; }
+      .medium { font-size: 14px; }
+      .bold { font-weight: 700; }
+      .outer { fill: #f4f4f4; stroke: #333; stroke-width: 1.5; }
+      .top { fill: #e4f0d8; stroke: #333; stroke-width: 1.5; }
+      .pool { fill: #efd1ad; stroke: #333; stroke-width: 1.5; }
+      .service { fill: #cfd2f0; stroke: #333; stroke-width: 1.5; }
+      .admin { fill: #ebcfe0; stroke: #333; stroke-width: 1.5; }
+      .engine { fill: #b9df9c; stroke: #333; stroke-width: 1.5; }
+      .file { fill: #f5edc3; stroke: #333; stroke-width: 1.5; }
+      .dash { fill: none; stroke: #666; stroke-width: 1; stroke-dasharray: 4 3; }
+      .dotbox { fill: none; stroke: #333; stroke-width: 1.2; stroke-dasharray: 2 2; }
+      .arrow { fill: none; stroke: #333; stroke-width: 1.7; marker-start: url(#arrowHead); marker-end: url(#arrowHead); }
+    </style>
+    <marker id="arrowHead" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f4f4f4" stroke="#333" stroke-width="1"/>
+    </marker>
+  </defs>
+
+  <rect width="916" height="640" fill="#ffffff"/>
+
+  <text class="label medium bold" x="14" y="44">外部程序</text>
+  <rect class="top" x="100" y="8" width="475" height="62" rx="2"/>
+  <text class="label medium bold" x="337.5" y="29" text-anchor="middle" textLength="210" lengthAdjust="spacingAndGlyphs">MySQL Connectors (应用程序)</text>
+  <text class="label small" x="337.5" y="47" text-anchor="middle" textLength="340" lengthAdjust="spacingAndGlyphs">.NET, ODBC, JDBC, Node.js, Python, C, C++,</text>
+  <text class="label small" x="337.5" y="61" text-anchor="middle">PHP, Perl, Ruby</text>
+
+  <rect class="top" x="598" y="8" width="297" height="62" rx="2"/>
+  <text class="label medium bold" x="746.5" y="35" text-anchor="middle">MySQL Shell</text>
+  <text class="label medium" x="746.5" y="54" text-anchor="middle">(Scripting)</text>
+
+  <path class="arrow" d="M 238 72 L 238 112"/>
+  <path class="arrow" d="M 444 72 L 444 112"/>
+  <path class="arrow" d="M 681 72 L 681 112"/>
+
+  <text class="label medium bold" x="40" y="325" text-anchor="middle">
+    <tspan x="40" dy="0">MySQL</tspan>
+    <tspan x="40" dy="20">服务器</tspan>
+  </text>
+
+  <rect class="outer" x="100" y="98" width="795" height="530" rx="2"/>
+  <line class="dash" x1="100" y1="171" x2="895" y2="171"/>
+  <line class="dash" x1="100" y1="314" x2="895" y2="314"/>
+  <line class="dash" x1="100" y1="514" x2="895" y2="514"/>
+
+  <text class="label small" x="136" y="141" text-anchor="middle" textLength="36" lengthAdjust="spacingAndGlyphs">连接层</text>
+  <text class="label small" x="136" y="247" text-anchor="middle" textLength="36" lengthAdjust="spacingAndGlyphs">服务层</text>
+  <text class="label small" x="136" y="429" text-anchor="middle" textLength="60" lengthAdjust="spacingAndGlyphs">存储引擎层</text>
+  <text class="label small" x="136" y="573" text-anchor="middle" textLength="60" lengthAdjust="spacingAndGlyphs">文件系统层</text>
+
+  <rect class="pool" x="173" y="112" width="536" height="47" rx="2"/>
+  <text class="label small bold" x="441" y="129" text-anchor="middle" textLength="155" lengthAdjust="spacingAndGlyphs">Connection Pool(连接池)</text>
+  <text class="label xsmall" x="441" y="145" text-anchor="middle" textLength="330" lengthAdjust="spacingAndGlyphs">Authentication - Thread Reuse - Connection Limits</text>
+  <text class="label xsmall" x="441" y="158" text-anchor="middle">Check Memory - Caches</text>
+
+  <rect class="service" x="173" y="184" width="92" height="116"/>
+  <text class="label small bold" x="219" y="202" text-anchor="middle">NoSQL</text>
+  <text class="label small bold" x="219" y="216" text-anchor="middle">Interface</text>
+  <text class="label small" x="219" y="230" text-anchor="middle">CRUD</text>
+  <text class="label small" x="219" y="244" text-anchor="middle">Operations</text>
+
+  <rect class="service" x="284" y="184" width="92" height="116"/>
+  <text class="label small bold" x="330" y="202" text-anchor="middle">SQL</text>
+  <text class="label small bold" x="330" y="216" text-anchor="middle">Interface</text>
+  <text class="label xsmall" x="330" y="230" text-anchor="middle">DML,DDL,</text>
+  <text class="label xsmall" x="330" y="244" text-anchor="middle">Stored</text>
+  <text class="label xsmall" x="330" y="258" text-anchor="middle">Procedures,</text>
+  <text class="label xsmall" x="330" y="272" text-anchor="middle">Views,</text>
+  <text class="label xsmall" x="330" y="286" text-anchor="middle">Triggers, etc</text>
+
+  <rect class="service" x="395" y="184" width="92" height="116"/>
+  <text class="label small bold" x="441" y="202" text-anchor="middle">Parser</text>
+  <text class="label small" x="441" y="216" text-anchor="middle">Query</text>
+  <text class="label xsmall" x="441" y="230" text-anchor="middle">Translation,</text>
+  <text class="label xsmall" x="441" y="244" text-anchor="middle">Object</text>
+  <text class="label xsmall" x="441" y="258" text-anchor="middle">Privilege</text>
+
+  <rect class="service" x="506" y="184" width="92" height="116"/>
+  <text class="label small bold" x="552" y="202" text-anchor="middle">Optimizer</text>
+  <text class="label small" x="552" y="216" text-anchor="middle">Query Access</text>
+  <text class="label small" x="552" y="230" text-anchor="middle">Paths,</text>
+  <text class="label small" x="552" y="244" text-anchor="middle">Statistics</text>
+
+  <rect class="service" x="619" y="184" width="92" height="116"/>
+  <text class="label small bold" x="665" y="202" text-anchor="middle" textLength="58" lengthAdjust="spacingAndGlyphs">Caches &amp;</text>
+  <text class="label small bold" x="665" y="216" text-anchor="middle">Buffers</text>
+  <text class="label xsmall" x="665" y="230" text-anchor="middle">Global and</text>
+  <text class="label xsmall" x="665" y="244" text-anchor="middle" textLength="78" lengthAdjust="spacingAndGlyphs">Storage Engine</text>
+  <text class="label xsmall" x="665" y="258" text-anchor="middle">Caches &amp;</text>
+  <text class="label xsmall" x="665" y="272" text-anchor="middle">Buffers</text>
+
+  <rect class="admin" x="728" y="112" width="160" height="188" rx="2"/>
+  <text class="label xsmall bold" x="808" y="135" text-anchor="middle" textLength="112" lengthAdjust="spacingAndGlyphs">服务器管理和公共组件</text>
+  <text class="label xsmall" x="808" y="162" text-anchor="middle" textLength="112" lengthAdjust="spacingAndGlyphs">Backup &amp; Recovery,</text>
+  <text class="label xsmall" x="808" y="176" text-anchor="middle">Security,</text>
+  <text class="label xsmall" x="808" y="190" text-anchor="middle">Replication,</text>
+  <text class="label xsmall" x="808" y="204" text-anchor="middle">Cluster,</text>
+  <text class="label xsmall" x="808" y="218" text-anchor="middle">Partitioning</text>
+  <text class="label xsmall" x="808" y="232" text-anchor="middle" textLength="112" lengthAdjust="spacingAndGlyphs">Instance Manager,</text>
+  <text class="label xsmall" x="808" y="246" text-anchor="middle" textLength="92" lengthAdjust="spacingAndGlyphs">Administrator,</text>
+  <text class="label xsmall" x="808" y="260" text-anchor="middle" textLength="102" lengthAdjust="spacingAndGlyphs">Migration Toolkit</text>
+
+  <rect class="dotbox" x="172" y="328" width="717" height="175"/>
+  <text class="label small bold" x="530" y="352" text-anchor="middle">可插拔的存储引擎</text>
+
+  <rect class="engine" x="181" y="369" width="67" height="102"/>
+  <text class="label small" x="214.5" y="424" text-anchor="middle">InnoDB</text>
+  <rect class="engine" x="252" y="369" width="67" height="102"/>
+  <text class="label small" x="285.5" y="424" text-anchor="middle">MyISAM</text>
+  <rect class="engine" x="322" y="369" width="67" height="102"/>
+  <text class="label small" x="355.5" y="424" text-anchor="middle">MEMORY</text>
+  <rect class="engine" x="393" y="369" width="67" height="102"/>
+  <text class="label small" x="426.5" y="424" text-anchor="middle">CSV</text>
+  <rect class="engine" x="463" y="369" width="67" height="102"/>
+  <text class="label small" x="496.5" y="424" text-anchor="middle">ARCHIVE</text>
+  <rect class="engine" x="533" y="369" width="67" height="102"/>
+  <text class="label small" x="566.5" y="417" text-anchor="middle">BLACKH</text>
+  <text class="label small" x="566.5" y="431" text-anchor="middle">OLE</text>
+  <rect class="engine" x="603" y="369" width="67" height="102"/>
+  <text class="label small" x="636.5" y="424" text-anchor="middle">MERGE</text>
+  <rect class="engine" x="673" y="369" width="67" height="102"/>
+  <text class="label small" x="706.5" y="417" text-anchor="middle">FEDERAT</text>
+  <text class="label small" x="706.5" y="431" text-anchor="middle">ED</text>
+  <rect class="engine" x="743" y="369" width="67" height="102"/>
+  <text class="label small" x="776.5" y="424" text-anchor="middle" textLength="48" lengthAdjust="spacingAndGlyphs">EXAMPLE</text>
+  <rect class="engine" x="813" y="369" width="67" height="102"/>
+  <text class="label small" x="846.5" y="424" text-anchor="middle">CUSTOM</text>
+
+  <rect class="dotbox" x="172" y="525" width="717" height="86"/>
+  <rect class="file" x="181" y="541" width="230" height="54"/>
+  <text class="label small bold" x="296" y="562" text-anchor="middle">系统文件</text>
+  <text class="label small" x="296" y="578" text-anchor="middle" textLength="170" lengthAdjust="spacingAndGlyphs">服务器程序，工具包，配置文件...</text>
+
+  <rect class="file" x="438" y="541" width="442" height="54"/>
+  <text class="label small bold" x="659" y="562" text-anchor="middle">文件 &amp; 日志</text>
+  <text class="label xsmall" x="659" y="574" text-anchor="middle" textLength="255" lengthAdjust="spacingAndGlyphs">Data, Index, Redo, Undo, Binary, Error,</text>
+  <text class="label xsmall" x="659" y="588" text-anchor="middle" textLength="205" lengthAdjust="spacingAndGlyphs">General Quer, Slow Query, DDL...</text>
+</svg>
